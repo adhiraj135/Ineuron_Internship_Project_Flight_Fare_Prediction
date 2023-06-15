@@ -11,13 +11,13 @@ from sklearn.model_selection import train_test_split
 class training:
     def __init__(self):
         self.log=log()
-        self.database=database()
-        self.load=loader()
-        self.encoder=encoder()
-        self.preprocessor=preprocessor()
-        self.model=model_selection()
-        self.file=open("src/logs/training_logs/training_logs.txt","a+")
+        self.file=open("src/logs/training_logs.txt", "a+")
         self.utils=utils(self.file,self.log)
+        self.database = database(self.file,self.log)
+        self.load = loader(self.file,self.log)
+        self.encoder = encoder(file_object=self.file,log=self.log)
+        self.preprocessor = preprocessor(file_object=self.file,log=self.log)
+        self.model = model_selection(self.file,self.log)
 
 
     def train(self):
@@ -46,6 +46,7 @@ class training:
             data = self.encoder.mean_encoding(data, column=['Airline', 'Destination'])
             data = self.encoder.manual_encoding(data, 'Total_Stops')
             data = self.preprocessor.drop_unneccessary_columns(data, col_list=['Source', 'Duration'])
+            data.to_excel("Dataset/input_file.csv",header=True,index=False)
             self.log.log(self.file, "Feature Engineering Completed!!")
             x = data.drop(columns=['Price'], axis=1)
             y = data['Price']
@@ -61,3 +62,6 @@ class training:
             self.log.log(self.file,"exception occurred while training operation : %s"%e)
             self.log.log(self.file,"training operation unsuccessful")
             raise e
+
+train=training()
+train.train()

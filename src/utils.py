@@ -3,10 +3,10 @@ import pickle
 
 
 class utils:
-    def __init__(self,file_obejct,log):
+    def __init__(self,file_object,log):
         self.path="src/saved_model"
         self.log=log
-        self.file_object=file_obejct
+        self.file_object=file_object
 
 
     def model_saver(self,model_name,model):

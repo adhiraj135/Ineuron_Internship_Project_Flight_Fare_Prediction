@@ -6,9 +6,9 @@ from sklearn.metrics import r2_score
 from src.logger import log
 
 class model_selection:
-    def __init__(self):
-        self.log=log()
-        self.file_object=open("src/training_logs/model_logs.txt","a+")
+    def __init__(self,file_object,log):
+        self.log=log
+        self.file_object=file_object
 
     def best_param_for_random_forest(self,x,y):
         self.log.log(self.file_object,"best parameters for random forest regressor extraction started")

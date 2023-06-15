@@ -7,10 +7,9 @@ import csv
 warnings.filterwarnings("ignore")
 
 class database:
-    def __init__(self):
-        self.log = log()
-        self.file = open('src/logs/training_logs/database_logs.txt', 'a+')
-        self.log.log(file_object=self.file,message="trying to connect the database")
+    def __init__(self,file_object,log):
+        self.log = log
+        self.file =file_object
         self.clientID = "djeXOGaIltmmdwTAjZSQvKtk"
         self.secret = "f5QG5QHxz4_7rgNGzL5TPUxxr0dpz.1LMsBRdrHKZ_CmeoZbMQIW7suNUgeTIPt.jSl.UWl478,P6UUI.GBb+ZCR7K-WZZpudw19icp5yn-fBq+USZsPb2x39yeznm3G"
         self.cloud_config = {'secure_connect_bundle': "secure-connect-aviationdatabase.zip"}

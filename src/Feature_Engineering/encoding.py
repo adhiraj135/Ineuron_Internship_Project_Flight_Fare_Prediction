@@ -1,9 +1,9 @@
 from src.logger import log
 
 class encoder:
-    def __init__(self):
-        self.log=log()
-        self.file_object=open('src/logs/training_logs/encoding_log.txt','a+')
+    def __init__(self,file_object,log):
+        self.log=log
+        self.file_object=file_object
         self.prediction_file_object = open('src/logs/prediction_logs/encoding_log.txt', 'a+')
 
     def one_hot(self,data,column):
