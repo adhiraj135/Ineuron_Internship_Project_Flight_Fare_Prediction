@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template,jsonify
 from flask_cors import CORS,cross_origin
 import pandas as pd
 import os
@@ -25,6 +25,7 @@ def predict():
             values = []
             for i in inputs.values():
                 values.append(i)
+            print(values)
             df=pd.read_excel("Dataset/Data_Train.xlsx")
             pred_df = pd.DataFrame(values, index=df.drop(columns=['Price'],axis=1).columns).T
             pred_df.to_csv("Dataset/prediction_file.csv", header=True, index=False)

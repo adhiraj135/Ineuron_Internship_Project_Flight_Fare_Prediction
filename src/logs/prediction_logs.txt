@@ -171,3 +171,102 @@
 2023-06-16/03:29:27		model loading operation successful
 2023-06-16/03:29:30		model : xgboost loaded successfully
 2023-06-16/03:29:30		prediction completed!!
+2023-06-16/04:33:10		prediction started!!
+2023-06-16/04:33:10		prediction Data loading started!!
+2023-06-16/04:33:10		prediction data which was created using the input by users on webpage operation started
+2023-06-16/04:33:10		prediction data successfully loaded
+2023-06-16/04:33:10		input Data loading completed!!
+2023-06-16/04:33:10		Prediction Feature Engineering started!!
+2023-06-16/04:33:10		dropping null values operation started
+2023-06-16/04:33:10		dropping null values operation successful
+2023-06-16/04:33:10		Changing dtype to datetime operation started
+2023-06-16/04:33:10		Changing dtype to datetime operation successful
+2023-06-16/04:33:10		Separating Date columns operation started
+2023-06-16/04:33:10		Separating Date columns operation successful
+2023-06-16/04:33:10		Separating Time columns operation started
+2023-06-16/04:33:10		Separating Time columns operation successful
+2023-06-16/04:33:10		extraction from duration column started
+2023-06-16/04:33:10		extraction from duration column successful
+2023-06-16/04:33:10		dropping unnecessary columns operation started
+2023-06-16/04:33:10		dropping unnecessary columns operation successful
+2023-06-16/04:33:12		dict value operation started
+2023-06-16/04:33:12		error in dict value operation : list index out of range
+2023-06-16/04:33:12		dict value operation unsuccessful
+2023-06-16/04:33:12		error in prediction : list index out of range
+2023-06-16/04:33:12		prediction unsuccessful
+2023-06-16/04:33:21		prediction started!!
+2023-06-16/04:33:21		prediction Data loading started!!
+2023-06-16/04:33:21		prediction data which was created using the input by users on webpage operation started
+2023-06-16/04:33:21		prediction data successfully loaded
+2023-06-16/04:33:21		input Data loading completed!!
+2023-06-16/04:33:21		Prediction Feature Engineering started!!
+2023-06-16/04:33:21		dropping null values operation started
+2023-06-16/04:33:21		dropping null values operation successful
+2023-06-16/04:33:21		Changing dtype to datetime operation started
+2023-06-16/04:33:21		Changing dtype to datetime operation successful
+2023-06-16/04:33:21		Separating Date columns operation started
+2023-06-16/04:33:21		Separating Date columns operation successful
+2023-06-16/04:33:21		Separating Time columns operation started
+2023-06-16/04:33:21		Separating Time columns operation successful
+2023-06-16/04:33:21		extraction from duration column started
+2023-06-16/04:33:21		extraction from duration column successful
+2023-06-16/04:33:21		dropping unnecessary columns operation started
+2023-06-16/04:33:21		dropping unnecessary columns operation successful
+2023-06-16/04:33:23		dict value operation started
+2023-06-16/04:33:23		Dict value operation successful
+2023-06-16/04:33:23		dict value operation started
+2023-06-16/04:33:23		Dict value operation successful
+2023-06-16/04:33:23		manual encoding operation started
+2023-06-16/04:33:23		manual encoding operation successful
+2023-06-16/04:33:23		input data loading started
+2023-06-16/04:33:23		input data successfully loaded
+2023-06-16/04:33:23		source column addition operation started
+2023-06-16/04:33:23		source column addition operation successful
+2023-06-16/04:33:23		One Hot encoding operation started
+2023-06-16/04:33:23		One Hot encoding successful
+2023-06-16/04:33:23		dropping unnecessary columns operation started
+2023-06-16/04:33:23		dropping unnecessary columns operation successful
+2023-06-16/04:33:23		Prediction Feature Engineering started!!
+2023-06-16/04:33:23		model loading started!!
+2023-06-16/04:33:23		model loading operation started
+2023-06-16/04:33:23		model loading operation successful
+2023-06-16/04:33:26		model : xgboost loaded successfully
+2023-06-16/04:33:26		prediction completed!!
+2023-06-16/04:36:09		prediction started!!
+2023-06-16/04:36:09		prediction Data loading started!!
+2023-06-16/04:36:09		prediction data which was created using the input by users on webpage operation started
+2023-06-16/04:36:09		prediction data successfully loaded
+2023-06-16/04:36:09		input Data loading completed!!
+2023-06-16/04:36:09		Prediction Feature Engineering started!!
+2023-06-16/04:36:09		dropping null values operation started
+2023-06-16/04:36:09		dropping null values operation successful
+2023-06-16/04:36:09		Changing dtype to datetime operation started
+2023-06-16/04:36:09		Changing dtype to datetime operation successful
+2023-06-16/04:36:09		Separating Date columns operation started
+2023-06-16/04:36:09		Separating Date columns operation successful
+2023-06-16/04:36:09		Separating Time columns operation started
+2023-06-16/04:36:09		Separating Time columns operation successful
+2023-06-16/04:36:09		extraction from duration column started
+2023-06-16/04:36:09		extraction from duration column successful
+2023-06-16/04:36:09		dropping unnecessary columns operation started
+2023-06-16/04:36:09		dropping unnecessary columns operation successful
+2023-06-16/04:36:11		dict value operation started
+2023-06-16/04:36:11		Dict value operation successful
+2023-06-16/04:36:11		dict value operation started
+2023-06-16/04:36:11		Dict value operation successful
+2023-06-16/04:36:11		manual encoding operation started
+2023-06-16/04:36:11		manual encoding operation successful
+2023-06-16/04:36:11		input data loading started
+2023-06-16/04:36:11		input data successfully loaded
+2023-06-16/04:36:11		source column addition operation started
+2023-06-16/04:36:11		source column addition operation successful
+2023-06-16/04:36:11		One Hot encoding operation started
+2023-06-16/04:36:11		One Hot encoding successful
+2023-06-16/04:36:11		dropping unnecessary columns operation started
+2023-06-16/04:36:11		dropping unnecessary columns operation successful
+2023-06-16/04:36:11		Prediction Feature Engineering started!!
+2023-06-16/04:36:11		model loading started!!
+2023-06-16/04:36:11		model loading operation started
+2023-06-16/04:36:11		model loading operation successful
+2023-06-16/04:36:12		model : xgboost loaded successfully
+2023-06-16/04:36:12		prediction completed!!
