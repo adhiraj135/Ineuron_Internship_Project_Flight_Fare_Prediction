@@ -31,7 +31,7 @@ def predict():
             pred_df.to_csv("Dataset/prediction_file.csv", header=True, index=False)
             pred = prediction()
             result=pred.predict()
-            return render_template('index.html',result_text="The Flight Fare is {prediction}".format(prediction=result))
+            return render_template('result.html',result_text="The Flight Fare is {prediction}".format(prediction=round(result,0)))
 
     except Exception as e:
         raise e

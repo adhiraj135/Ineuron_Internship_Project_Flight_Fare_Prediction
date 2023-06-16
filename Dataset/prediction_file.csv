@@ -1,2 +1,2 @@
 Airline,Date_of_Journey,Source,Destination,Route,Dep_Time,Arrival_Time,Duration,Total_Stops,Additional_Info
-IndiGo,2023-06-18,Kolkata,New Delhi,Kolkata -> New Delhi,06:30,20:00,13h 30m,non-stop,No info
+IndiGo,2023-06-18,Banglore,Delhi,Banglore -> Delhi,08:00,15:30,7h 30m,2 stops,Business class

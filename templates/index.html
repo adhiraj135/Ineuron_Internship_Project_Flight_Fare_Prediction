@@ -109,10 +109,11 @@
             <option value="Jet Airways Business">Jet Airways Business</option>
             <option value="Multiple carriers Premium economy">Multiple carriers Premium economy</option>
             <option value="Trujet">Trujet</option>
-        </select><br>
+
+        </select><br><br>
 
         <label for="date">Date of Journey:</label>
-        <input type="date" name="date" id="date"><br>
+        <input type="date" name="date" id="date"><br><br>
 
         <label for="source">Source:</label>
         <select name="source" id="source" onchange="updateRoute()">
@@ -121,7 +122,7 @@
             <option value="Delhi">Delhi</option>
             <option value="Chennai">Chennai</option>
             <option value="Mumbai">Mumbai</option>
-        </select><br>
+        </select><br><br>
 
         <label for="destination">Destination:</label>
         <select name="destination" id="destination" onchange="updateRoute()">
@@ -131,19 +132,19 @@
             <option value="Kolkata">Kolkata</option>
             <option value="Delhi">Delhi</option>
             <option value="Hyderabad">Hyderabad</option>
-        </select><br>
+        </select><br><br>
 
         <label for="route">Route:</label>
-        <input type="text" name="route" id="route" readonly><br>
+        <input type="text" name="route" id="route" readonly><br><br>
 
         <label for="departure">Departure Time:</label>
-        <input type="time" name="departure" id="departure" onchange="calculateDuration()"><br>
+        <input type="time" name="departure" id="departure" onchange="calculateDuration()"><br><br>
 
         <label for="arrival">Arrival Time:</label>
-        <input type="time" name="arrival" id="arrival" onchange="calculateDuration()"><br>
+        <input type="time" name="arrival" id="arrival" onchange="calculateDuration()"><br><br>
 
         <label for="duration">Duration:</label>
-        <input type="text" name="duration" id="duration" readonly><br>
+        <input type="text" name="duration" id="duration" readonly><br><br>
 
         <label for="stops">Total Stops:</label>
         <select name="stops" id="stops">
@@ -152,7 +153,7 @@
             <option value="1 stop">1 stop</option>
             <option value="3 stops">3 stops</option>
             <option value="4 stops">4 stops</option>
-        </select><br>
+        </select><br><br>
 
         <label for="info">Additional Info:</label>
         <select name="info" id="info">
@@ -165,7 +166,7 @@
             <option value="Business class">Business class</option>
             <option value="Red-eye flight">Red-eye flight</option>
             <option value="2 Long layover">2 Long layover</option>
-        </select><br>
+        </select><br><br>
 
         <input type="submit" value="Predict">
     </form>
