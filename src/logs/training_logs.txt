@@ -1,0 +1,358 @@
+2023-06-15/08:26:00		training process started!!
+2023-06-15/08:26:00		cassandra database builder operation started
+2023-06-15/08:26:00		data loading of the data to be stored in cassandra database started
+2023-06-15/08:26:03		data loading successfully completed
+2023-06-15/08:26:03		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-15/08:26:03		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-15/08:26:03		Cassandra database table creation started
+2023-06-15/08:26:03		database connection operation started
+2023-06-15/08:26:34		database connection operation successful
+2023-06-15/08:27:04		Cassandra database table successfully created
+2023-06-15/08:27:04		Cassandra database data insertion started
+2023-06-15/08:27:04		database connection operation started
+2023-06-15/08:30:32		training process started!!
+2023-06-15/08:30:32		cassandra database builder operation started
+2023-06-15/08:30:32		data loading of the data to be stored in cassandra database started
+2023-06-15/08:30:36		data loading successfully completed
+2023-06-15/08:30:36		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-15/08:30:36		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-15/08:30:36		Cassandra database table creation started
+2023-06-15/08:30:36		database connection operation started
+2023-06-15/08:45:34		training process started!!
+2023-06-15/08:45:34		cassandra database builder operation started
+2023-06-15/08:45:34		data loading of the data to be stored in cassandra database started
+2023-06-15/08:45:38		data loading successfully completed
+2023-06-15/08:45:38		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-15/08:45:38		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-15/08:45:38		Cassandra database table creation started
+2023-06-15/08:45:38		database connection operation started
+2023-06-15/08:46:09		exception occurred while training operation : local variable 'session' referenced before assignment
+2023-06-15/08:46:09		training operation unsuccessful
+2023-06-15/08:47:02		training process started!!
+2023-06-15/08:47:02		cassandra database builder operation started
+2023-06-15/08:47:02		data loading of the data to be stored in cassandra database started
+2023-06-15/08:47:05		data loading successfully completed
+2023-06-15/08:47:05		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-15/08:47:05		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-15/08:47:05		Cassandra database table creation started
+2023-06-15/08:47:05		database connection operation started
+2023-06-15/08:47:32		database connection operation successful
+2023-06-15/08:48:05		Cassandra database table successfully created
+2023-06-15/08:48:05		Cassandra database data insertion started
+2023-06-15/08:48:05		database connection operation started
+2023-06-15/08:48:27		database connection operation successful
+2023-06-15/08:48:28		Error in Cassandra database data insertion <Error from server: code=2000 [Syntax error in CQL query] message="line 1:170 no viable alternative at input ',' (...Additional_Info,Price) VALUES (0,[IndiGo],...)">
+2023-06-15/08:48:28		Cassandra database data insertion unsuccessful
+2023-06-15/08:48:28		exception occurred while training operation : <Error from server: code=2000 [Syntax error in CQL query] message="line 1:170 no viable alternative at input ',' (...Additional_Info,Price) VALUES (0,[IndiGo],...)">
+2023-06-15/08:48:28		training operation unsuccessful
+2023-06-16/00:28:47		training process started!!
+2023-06-16/00:28:47		cassandra database builder operation started
+2023-06-16/00:28:47		data loading of the data to be stored in cassandra database started
+2023-06-16/00:28:51		data loading successfully completed
+2023-06-16/00:28:51		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-16/00:28:51		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-16/00:28:51		Cassandra database table creation started
+2023-06-16/00:28:51		database connection operation started
+2023-06-16/00:29:02		database connection operation successful
+2023-06-16/00:29:24		Cassandra database table successfully created
+2023-06-16/00:29:24		Cassandra database data insertion started
+2023-06-16/00:29:24		database connection operation started
+2023-06-16/00:29:35		database connection operation successful
+2023-06-16/01:18:38		Cassandra database data insertion successful
+2023-06-16/01:18:38		Extract data from Cassandra database into lacal stared
+2023-06-16/01:18:38		database connection operation started
+2023-06-16/01:18:51		database connection operation successful
+2023-06-16/01:19:01		Extraction of data from Cassandra database into lacal successful
+2023-06-16/01:19:01		cassandra database builder operation successful
+2023-06-16/01:19:01		Dataset loading Started!!
+2023-06-16/01:19:01		data loading started
+2023-06-16/01:19:01		data successfully loaded
+2023-06-16/01:19:01		Dataset loading completed!!
+2023-06-16/01:19:01		Feature Engineering Started!!
+2023-06-16/01:19:01		dropping null values operation started
+2023-06-16/01:19:01		dropping null values operation successful
+2023-06-16/01:19:01		Changing dtype to datetime operation started
+2023-06-16/01:19:01		Changing dtype to datetime operation successful
+2023-06-16/01:19:01		Separating Date columns operation started
+2023-06-16/01:19:01		Separating Date columns operation successful
+2023-06-16/01:19:01		Separating Time columns operation started
+2023-06-16/01:19:01		Separating Time columns operation successful
+2023-06-16/01:19:01		extraction from duration column started
+2023-06-16/01:19:01		extraction from duration column successful
+2023-06-16/01:19:01		dropping unnecessary columns operation started
+2023-06-16/01:19:01		dropping unnecessary columns operation successful
+2023-06-16/01:19:01		One Hot encoding operation started
+2023-06-16/01:19:01		One Hot encoding successful
+2023-06-16/01:19:01		mean encoding operation started
+2023-06-16/01:19:01		mean encoding operation successful
+2023-06-16/01:19:01		manual encoding operation started
+2023-06-16/01:19:01		manual encoding operation successful
+2023-06-16/01:19:01		dropping unnecessary columns operation started
+2023-06-16/01:19:01		dropping unnecessary columns operation successful
+2023-06-16/01:19:01		exception occurred while training operation : 'DataFrame' object has no attribute 'to_csvl'
+2023-06-16/01:19:01		training operation unsuccessful
+2023-06-16/01:33:55		training process started!!
+2023-06-16/01:33:55		cassandra database builder operation started
+2023-06-16/01:33:55		data loading of the data to be stored in cassandra database started
+2023-06-16/01:33:58		data loading successfully completed
+2023-06-16/01:33:58		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-16/01:33:58		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-16/01:33:58		Cassandra database table creation started
+2023-06-16/01:33:58		database connection operation started
+2023-06-16/01:34:09		database connection operation successful
+2023-06-16/01:34:10		Error in Cassandra database table creation Table 'flightfaredata.flight_fare_data_table' already exists
+2023-06-16/01:34:10		Cassandra database table creation is unsuccessful
+2023-06-16/01:34:10		exception occurred while training operation : Table 'flightfaredata.flight_fare_data_table' already exists
+2023-06-16/01:34:10		training operation unsuccessful
+2023-06-16/02:03:15		training process started!!
+2023-06-16/02:03:15		cassandra database builder operation started
+2023-06-16/02:03:15		data loading of the data to be stored in cassandra database started
+2023-06-16/02:03:18		data loading successfully completed
+2023-06-16/02:03:18		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-16/02:03:18		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-16/02:03:18		Cassandra database table creation started
+2023-06-16/02:03:18		database connection operation started
+2023-06-16/02:03:29		database connection operation successful
+2023-06-16/02:03:32		Cassandra database table already created
+2023-06-16/02:03:32		Cassandra database data insertion started
+2023-06-16/02:03:32		database connection operation started
+2023-06-16/02:03:43		database connection operation successful
+2023-06-16/02:03:45		Cassandra database table already contains the full data
+2023-06-16/02:03:45		Extract data from Cassandra database into lacal stared
+2023-06-16/02:03:45		database connection operation started
+2023-06-16/02:03:59		database connection operation successful
+2023-06-16/02:04:07		Extraction of data from Cassandra database into lacal successful
+2023-06-16/02:04:07		cassandra database builder operation successful
+2023-06-16/02:04:07		Dataset loading Started!!
+2023-06-16/02:04:07		data loading started
+2023-06-16/02:04:07		data successfully loaded
+2023-06-16/02:04:07		Dataset loading completed!!
+2023-06-16/02:04:07		Feature Engineering Started!!
+2023-06-16/02:04:07		dropping null values operation started
+2023-06-16/02:04:07		dropping null values operation successful
+2023-06-16/02:04:07		Changing dtype to datetime operation started
+2023-06-16/02:04:07		Changing dtype to datetime operation successful
+2023-06-16/02:04:07		Separating Date columns operation started
+2023-06-16/02:04:07		Separating Date columns operation successful
+2023-06-16/02:04:07		Separating Time columns operation started
+2023-06-16/02:04:07		Separating Time columns operation successful
+2023-06-16/02:04:07		extraction from duration column started
+2023-06-16/02:04:07		extraction from duration column successful
+2023-06-16/02:04:07		dropping unnecessary columns operation started
+2023-06-16/02:04:07		dropping unnecessary columns operation successful
+2023-06-16/02:04:07		One Hot encoding operation started
+2023-06-16/02:04:07		One Hot encoding successful
+2023-06-16/02:04:07		mean encoding operation started
+2023-06-16/02:04:07		mean encoding operation successful
+2023-06-16/02:04:07		manual encoding operation started
+2023-06-16/02:04:07		manual encoding operation successful
+2023-06-16/02:04:07		dropping unnecessary columns operation started
+2023-06-16/02:04:07		dropping unnecessary columns operation successful
+2023-06-16/02:04:07		Feature Engineering Completed!!
+2023-06-16/02:04:07		Training Successful!!
+2023-06-16/02:06:56		training process started!!
+2023-06-16/02:06:56		cassandra database builder operation started
+2023-06-16/02:06:56		data loading of the data to be stored in cassandra database started
+2023-06-16/02:06:59		data loading successfully completed
+2023-06-16/02:06:59		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-16/02:06:59		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-16/02:06:59		Cassandra database table creation started
+2023-06-16/02:06:59		database connection operation started
+2023-06-16/02:07:11		database connection operation successful
+2023-06-16/02:07:12		Cassandra database table already created
+2023-06-16/02:07:12		Cassandra database data insertion started
+2023-06-16/02:07:12		database connection operation started
+2023-06-16/02:07:24		database connection operation successful
+2023-06-16/02:07:26		Cassandra database table already contains the full data
+2023-06-16/02:07:26		Extract data from Cassandra database into lacal stared
+2023-06-16/02:07:26		database connection operation started
+2023-06-16/02:07:37		database connection operation successful
+2023-06-16/02:07:43		Extraction of data from Cassandra database into lacal successful
+2023-06-16/02:07:43		cassandra database builder operation successful
+2023-06-16/02:07:43		Dataset loading Started!!
+2023-06-16/02:07:43		data loading started
+2023-06-16/02:07:43		data successfully loaded
+2023-06-16/02:07:43		Dataset loading completed!!
+2023-06-16/02:07:43		Feature Engineering Started!!
+2023-06-16/02:07:43		dropping null values operation started
+2023-06-16/02:07:43		dropping null values operation successful
+2023-06-16/02:07:43		Changing dtype to datetime operation started
+2023-06-16/02:07:43		Changing dtype to datetime operation successful
+2023-06-16/02:07:43		Separating Date columns operation started
+2023-06-16/02:07:43		Separating Date columns operation successful
+2023-06-16/02:07:43		Separating Time columns operation started
+2023-06-16/02:07:43		Separating Time columns operation successful
+2023-06-16/02:07:43		extraction from duration column started
+2023-06-16/02:07:43		extraction from duration column successful
+2023-06-16/02:07:43		dropping unnecessary columns operation started
+2023-06-16/02:07:43		dropping unnecessary columns operation successful
+2023-06-16/02:07:43		One Hot encoding operation started
+2023-06-16/02:07:43		One Hot encoding successful
+2023-06-16/02:07:43		mean encoding operation started
+2023-06-16/02:07:44		mean encoding operation successful
+2023-06-16/02:07:44		manual encoding operation started
+2023-06-16/02:07:44		manual encoding operation successful
+2023-06-16/02:07:44		dropping unnecessary columns operation started
+2023-06-16/02:07:44		dropping unnecessary columns operation successful
+2023-06-16/02:07:44		Feature Engineering Completed!!
+2023-06-16/02:07:44		Training Successful!!
+2023-06-16/02:19:27		training process started!!
+2023-06-16/02:19:27		cassandra database builder operation started
+2023-06-16/02:19:27		data loading of the data to be stored in cassandra database started
+2023-06-16/02:19:30		data loading successfully completed
+2023-06-16/02:19:30		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-16/02:19:30		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-16/02:19:30		Cassandra database table creation started
+2023-06-16/02:19:30		database connection operation started
+2023-06-16/02:19:55		database connection operation successful
+2023-06-16/02:19:58		Cassandra database table already created
+2023-06-16/02:19:58		Cassandra database data insertion started
+2023-06-16/02:19:58		database connection operation started
+2023-06-16/02:20:12		database connection operation successful
+2023-06-16/02:20:13		Cassandra database table already contains the full data
+2023-06-16/02:20:13		exception occurred while training operation : extract_data_form_database_into_lacal() got an unexpected keyword argument 'columns'
+2023-06-16/02:20:13		training operation unsuccessful
+2023-06-16/02:20:35		training process started!!
+2023-06-16/02:20:35		cassandra database builder operation started
+2023-06-16/02:20:35		data loading of the data to be stored in cassandra database started
+2023-06-16/02:20:38		data loading successfully completed
+2023-06-16/02:20:38		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-16/02:20:38		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-16/02:20:38		Cassandra database table creation started
+2023-06-16/02:20:38		database connection operation started
+2023-06-16/02:20:50		database connection operation successful
+2023-06-16/02:20:51		Cassandra database table already created
+2023-06-16/02:20:51		Cassandra database data insertion started
+2023-06-16/02:20:51		database connection operation started
+2023-06-16/02:21:04		database connection operation successful
+2023-06-16/02:21:07		Cassandra database table already contains the full data
+2023-06-16/02:21:07		Extract data from Cassandra database into lacal stared
+2023-06-16/02:21:07		database connection operation started
+2023-06-16/02:21:18		database connection operation successful
+2023-06-16/02:21:27		Error in Extraction of data from Cassandra database into lacal "['ID'] not found in axis"
+2023-06-16/02:21:27		Extraction of data from Cassandra database into lacal unsuccessful
+2023-06-16/02:21:27		exception occurred while training operation : "['ID'] not found in axis"
+2023-06-16/02:21:27		training operation unsuccessful
+2023-06-16/02:23:32		training process started!!
+2023-06-16/02:23:32		cassandra database builder operation started
+2023-06-16/02:23:32		data loading of the data to be stored in cassandra database started
+2023-06-16/02:23:34		data loading successfully completed
+2023-06-16/02:23:34		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-16/02:23:34		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-16/02:23:34		Cassandra database table creation started
+2023-06-16/02:23:34		database connection operation started
+2023-06-16/02:23:47		database connection operation successful
+2023-06-16/02:23:47		Cassandra database table already created
+2023-06-16/02:23:47		Cassandra database data insertion started
+2023-06-16/02:23:47		database connection operation started
+2023-06-16/02:24:00		database connection operation successful
+2023-06-16/02:24:03		Cassandra database table already contains the full data
+2023-06-16/02:24:03		Extract data from Cassandra database into lacal stared
+2023-06-16/02:24:03		database connection operation started
+2023-06-16/02:24:14		database connection operation successful
+2023-06-16/02:24:21		Extraction of data from Cassandra database into lacal successful
+2023-06-16/02:24:21		cassandra database builder operation successful
+2023-06-16/02:24:21		Dataset loading Started!!
+2023-06-16/02:24:21		data loading started
+2023-06-16/02:24:21		data successfully loaded
+2023-06-16/02:24:21		Dataset loading completed!!
+2023-06-16/02:24:21		Feature Engineering Started!!
+2023-06-16/02:24:21		dropping null values operation started
+2023-06-16/02:24:21		dropping null values operation successful
+2023-06-16/02:24:21		Changing dtype to datetime operation started
+2023-06-16/02:24:21		error in Changing dtype to datetime operation : 'Date_of_Journey'
+2023-06-16/02:24:21		Changing dtype to datetime operation successful
+2023-06-16/02:24:21		exception occurred while training operation : 'Date_of_Journey'
+2023-06-16/02:24:21		training operation unsuccessful
+2023-06-16/02:31:18		training process started!!
+2023-06-16/02:31:18		cassandra database builder operation started
+2023-06-16/02:31:18		data loading of the data to be stored in cassandra database started
+2023-06-16/02:31:21		data loading successfully completed
+2023-06-16/02:31:21		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-16/02:31:21		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-16/02:31:21		Cassandra database table creation started
+2023-06-16/02:31:21		database connection operation started
+2023-06-16/02:31:33		database connection operation successful
+2023-06-16/02:31:34		Cassandra database table already created
+2023-06-16/02:31:34		Cassandra database data insertion started
+2023-06-16/02:31:34		database connection operation started
+2023-06-16/02:31:46		database connection operation successful
+2023-06-16/02:31:49		Cassandra database table already contains the full data
+2023-06-16/02:31:49		Extract data from Cassandra database into lacal stared
+2023-06-16/02:31:49		database connection operation started
+2023-06-16/02:32:00		database connection operation successful
+2023-06-16/02:32:08		Extraction of data from Cassandra database into lacal successful
+2023-06-16/02:32:08		cassandra database builder operation successful
+2023-06-16/02:32:08		Dataset loading Started!!
+2023-06-16/02:32:08		data loading started
+2023-06-16/02:32:08		data successfully loaded
+2023-06-16/02:32:08		Dataset loading completed!!
+2023-06-16/02:32:08		Feature Engineering Started!!
+2023-06-16/02:32:08		dropping null values operation started
+2023-06-16/02:32:08		dropping null values operation successful
+2023-06-16/02:32:08		Changing dtype to datetime operation started
+2023-06-16/02:32:09		Changing dtype to datetime operation successful
+2023-06-16/02:32:09		Separating Date columns operation started
+2023-06-16/02:32:09		Separating Date columns operation successful
+2023-06-16/02:32:09		Separating Time columns operation started
+2023-06-16/02:32:09		Separating Time columns operation successful
+2023-06-16/02:32:09		extraction from duration column started
+2023-06-16/02:32:09		extraction from duration column successful
+2023-06-16/02:32:09		dropping unnecessary columns operation started
+2023-06-16/02:32:09		dropping unnecessary columns operation successful
+2023-06-16/02:32:09		One Hot encoding operation started
+2023-06-16/02:32:09		One Hot encoding successful
+2023-06-16/02:32:09		mean encoding operation started
+2023-06-16/02:32:09		mean encoding operation successful
+2023-06-16/02:32:09		manual encoding operation started
+2023-06-16/02:32:09		manual encoding operation successful
+2023-06-16/02:32:09		dropping unnecessary columns operation started
+2023-06-16/02:32:09		dropping unnecessary columns operation successful
+2023-06-16/02:32:09		Feature Engineering Completed!!
+2023-06-16/02:32:09		Training Successful!!
+2023-06-16/02:33:33		training process started!!
+2023-06-16/02:33:33		cassandra database builder operation started
+2023-06-16/02:33:33		data loading of the data to be stored in cassandra database started
+2023-06-16/02:33:36		data loading successfully completed
+2023-06-16/02:33:36		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-16/02:33:36		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-16/02:33:36		Cassandra database table creation started
+2023-06-16/02:33:36		database connection operation started
+2023-06-16/02:33:49		database connection operation successful
+2023-06-16/02:33:49		Cassandra database table already created
+2023-06-16/02:33:49		Cassandra database data insertion started
+2023-06-16/02:33:49		database connection operation started
+2023-06-16/02:34:01		database connection operation successful
+2023-06-16/02:34:03		Cassandra database table already contains the full data
+2023-06-16/02:34:03		Extract data from Cassandra database into lacal stared
+2023-06-16/02:34:03		database connection operation started
+2023-06-16/02:34:16		database connection operation successful
+2023-06-16/02:34:32		Extraction of data from Cassandra database into lacal successful
+2023-06-16/02:34:32		cassandra database builder operation successful
+2023-06-16/02:34:32		Dataset loading Started!!
+2023-06-16/02:34:32		data loading started
+2023-06-16/02:34:32		data successfully loaded
+2023-06-16/02:34:32		Dataset loading completed!!
+2023-06-16/02:34:32		Feature Engineering Started!!
+2023-06-16/02:34:32		dropping null values operation started
+2023-06-16/02:34:32		dropping null values operation successful
+2023-06-16/02:34:32		Changing dtype to datetime operation started
+2023-06-16/02:34:33		Changing dtype to datetime operation successful
+2023-06-16/02:34:33		Separating Date columns operation started
+2023-06-16/02:34:33		Separating Date columns operation successful
+2023-06-16/02:34:33		Separating Time columns operation started
+2023-06-16/02:34:33		Separating Time columns operation successful
+2023-06-16/02:34:33		extraction from duration column started
+2023-06-16/02:34:33		extraction from duration column successful
+2023-06-16/02:34:33		dropping unnecessary columns operation started
+2023-06-16/02:34:33		dropping unnecessary columns operation successful
+2023-06-16/02:34:33		One Hot encoding operation started
+2023-06-16/02:34:33		One Hot encoding successful
+2023-06-16/02:34:33		mean encoding operation started
+2023-06-16/02:34:33		mean encoding operation successful
+2023-06-16/02:34:33		manual encoding operation started
+2023-06-16/02:34:33		manual encoding operation successful
+2023-06-16/02:34:33		dropping unnecessary columns operation started
+2023-06-16/02:34:33		dropping unnecessary columns operation successful
+2023-06-16/02:34:34		Feature Engineering Completed!!
+2023-06-16/02:34:34		Training Successful!!

@@ -7,7 +7,6 @@ class preprocessor:
     def __init__(self,file_object,log):
         self.log=log
         self.file_object=file_object
-        self.prediction_file_object = open('src/logs/prediction_logs/encoding_log.txt', 'a+')
 
 
     def drop_null_values(self, data):

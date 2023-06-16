@@ -24,14 +24,18 @@ class training:
         self.log.log(self.file,"training process started!!")
         try:
             self.log.log(self.file,"cassandra database builder operation started")
-            data=self.database.data_load()
-            columns,DataType=self.database.extract_columns_and_datatype(data)
+            df=self.database.data_load()
+            columns,DataType=self.database.extract_columns_and_datatype(df)
+            print(columns,DataType)
             self.database.database_table_creation(columns=columns,data_type=DataType)
-            self.database.database_inserion(data,columns=columns)
-            self.database.extract_data_form_database_into_lacal(columns=columns)
+            self.database.database_inserion(df,columns=columns)
+            self.database.extract_data_form_database_into_lacal()
             self.log.log(self.file, "cassandra database builder operation successful")
             self.log.log(self.file, "Dataset loading Started!!")
             data = self.load.load()
+            data=df
+            data.drop(columns=["ID"], inplace=True)
+            print(data)
             self.log.log(self.file, "Dataset loading completed!!")
             self.log.log(self.file, "Feature Engineering Started!!")
             data = self.preprocessor.drop_null_values(data)
@@ -46,15 +50,16 @@ class training:
             data = self.encoder.mean_encoding(data, column=['Airline', 'Destination'])
             data = self.encoder.manual_encoding(data, 'Total_Stops')
             data = self.preprocessor.drop_unneccessary_columns(data, col_list=['Source', 'Duration'])
-            data.to_excel("Dataset/input_file.csv",header=True,index=False)
+            data.to_csv("Dataset/input_file.csv",header=True,index=False)
             self.log.log(self.file, "Feature Engineering Completed!!")
             x = data.drop(columns=['Price'], axis=1)
             y = data['Price']
-            x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=42, test_size=0.25)
-            self.log.log(self.file, "Best model selection Started!!")
-            model_name, model = self.model.best_model(x_train=x_train, x_test=x_test, y_train=y_train, y_test=y_test)
-            self.log.log(self.file, "Best model selection Completed!!")
-            self.utils.model_saver(model_name, model)
+            print(x,y)
+            #x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=42, test_size=0.25)
+            #self.log.log(self.file, "Best model selection Started!!")
+            #model_name, model = self.model.best_model(x_train=x_train, x_test=x_test, y_train=y_train, y_test=y_test)
+            #self.log.log(self.file, "Best model selection Completed!!")
+            #self.utils.model_saver(model_name, model)
             self.log.log(self.file, "Training Successful!!")
 
 
@@ -63,5 +68,3 @@ class training:
             self.log.log(self.file,"training operation unsuccessful")
             raise e
 
-train=training()
-train.train()

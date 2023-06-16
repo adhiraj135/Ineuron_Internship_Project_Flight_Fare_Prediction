@@ -11,7 +11,7 @@ class prediction:
         self.log=log()
         self.prediction_file_object=open('src/logs/prediction_logs.txt','a+')
         self.model_path='src/saved_model'
-        self.utils=utils(file_obejct=self.prediction_file_object,log=self.log)
+        self.utils=utils(file_object=self.prediction_file_object,log=self.log)
         self.preprocessor = preprocessor(file_object=self.prediction_file_object,log=self.log)
         self.encoder = encoder(file_object=self.prediction_file_object,log=self.log)
         self.load = loader(file_object=self.prediction_file_object,log=self.log)

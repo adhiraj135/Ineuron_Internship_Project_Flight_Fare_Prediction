@@ -34,13 +34,17 @@ class database:
     def extract_columns_and_datatype(self,data):
         self.log.log(file_object=self.file,message="extraction columns and datatype from the data to be stored in cassandra started")
         try:
-           columns=list(data.columns)
-           data_type=[]
-           data_type.append("int PRIMARY KEY")
-           for i in range(len(data.dtypes.values)-1):
+            columns = list(data.columns)
+            data_type = []
+            data_type.append("int PRIMARY KEY")
+            for i in range(len(data.dtypes.values)):
                 data_type.append(str(data.dtypes.values[i]).split('64')[0])
-           self.log.log(file_object=self.file,message="extraction columns and datatype from the data to be stored in cassandra is successful")
-           return columns,data_type
+            for i in range(len(data_type)):
+                if data_type[i] == "object":
+                     data_type[i] = "text"
+            data_type.remove('int')
+            self.log.log(file_object=self.file,message="extraction columns and datatype from the data to be stored in cassandra is successful")
+            return columns,data_type
         except Exception as e:
             self.log.log(file_object=self.file,message="error in extraction columns and datatype %s"%e)
             self.log.log(file_object=self.file,message="extraction columns and datatype from the data to be stored in cassandra is unsuccessful")
@@ -67,7 +71,7 @@ class database:
         try:
             session=self.database_connection()
             session.execute("USE {key_space_name};".format(key_space_name=self.keyspace))
-            result=session.execute("SELECT COUNT(*) FROM system_schema.tables WHERE keyspace_name = 'credit_risk_data' AND table_name = 'bank_credit_data_table';")
+            result=session.execute("SELECT COUNT(*) FROM system_schema.tables WHERE keyspace_name = 'flightfaredata' AND table_name = 'flight_fare_data_table';")
             if result[0][0]==1:
                  session.shutdown()
                  self.log.log(file_object=self.file,message="Cassandra database table already created")
@@ -100,14 +104,15 @@ class database:
                 self.log.log(file_object=self.file, message="Cassandra database table already contains the full data")
                 pass
             else:
-                with open('Dataset/data.csv','r') as f:
-                     next(f)
-                     column_names= ','.join(columns)
-                     reader=csv.reader(f,delimiter="\n")
-                     for i in enumerate(reader):
-                         for data in i[1]:
-                             for cols in column_names.split("'"):
-                                  session.execute("INSERT INTO {table} ({columns}) VALUES ({values});".format(table=self.table_name,columns=cols,values=data))
+                with open('Dataset/data.csv', 'r') as file:
+                    next(file)
+                    csv_data = csv.reader(file)
+                    column = ','.join(columns).split("'")
+                    for row in csv_data:
+                        for cols in column:
+                            print(row, cols)
+                            query = f"INSERT INTO {self.table_name} ({cols}) VALUES ({row[0]}, '{row[1]}', '{row[2]}', '{row[3]}', '{row[4]}', '{row[5]}', '{row[6]}', '{row[7]}', '{row[8]}', '{row[9]}', '{row[10]}', {row[11]})"
+                            session.execute(query)
                 session.shutdown()
                 self.log.log(file_object=self.file, message="Cassandra database data insertion successful")
         except Exception as e:
@@ -115,7 +120,7 @@ class database:
             self.log.log(file_object=self.file, message="Cassandra database data insertion unsuccessful")
             raise e
 
-    def extract_data_form_database_into_lacal(self,columns):
+    def extract_data_form_database_into_lacal(self):
         self.log.log(file_object=self.file, message="Extract data from Cassandra database into lacal stared")
         try:
             session=self.database_connection()
@@ -123,8 +128,8 @@ class database:
             data = []
             for row in session.execute("select * from {table};".format(table=self.table_name)):
                 data.append(row._asdict())
-            df=pd.DataFrame(data,columns=columns)
-            df.drop(columns=["ID"],inplace=True)
+            df=pd.DataFrame(data,columns=list(data[0].keys()))
+            df.drop(columns=["id"],inplace=True)
             df.to_csv("Dataset/DATABASE_INPUT_FILE.csv",header=True,index=False)
             session.shutdown()
             self.log.log(file_object=self.file, message="Extraction of data from Cassandra database into lacal successful")
