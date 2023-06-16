@@ -1,7 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flight Fare Prediction</title>
+  <title>Flight Fare Prediction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('static/flight.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      opacity: 0.9; /* Adjust the opacity as desired */
+      z-index: -1;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    select,
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .result {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .result-text {
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+    }
+  </style>
+</head>
     <script>
         function updateRoute() {
             var source = document.getElementById("source").value;
@@ -25,9 +92,8 @@
             document.getElementById("duration").value = durationText;
         }
     </script>
-</head>
 <body>
-    <h1>Flight Fare Prediction</h1>
+    <h1>Flights</h1>
     <form action="/predict" method="post">
         <label for="airline">Airline:</label>
         <select name="airline" id="airline">
@@ -105,9 +171,5 @@
     </form>
 
 
-    <br>
-    <br>
-
- {{result_text}}
 </body>
 </html>
