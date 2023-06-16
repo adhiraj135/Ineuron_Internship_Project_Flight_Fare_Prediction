@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flight Price</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Flight Fare Prediction</h1>
+      <form action="{{ url_for('predict')}}"method="post">
+        <label for="Airlines">Choose a Airline:</label>
+          <select id="Airlines" name="Airlines">
+             <option value="IndiGo">IndiGo</option>
+             <option value="Air India">Air India</option>
+             <option value="Jet Airways">Jet Airways</option>
+             <option value="SpiceJet">SpiceJet</option>
+              <option value="Multiple carriers">Multiple carriers</option>
+              <option value="GoAir">GoAir</option>
+              <option value="Vistara">Vistara</option>
+              <option value="Air Asia">Air Asia</option>
+              <option value="Vistara Premium economy">Vistara Premium economy</option>
+              <option value="Jet Airways Business">Jet Airways Business</option>
+              <option value="Multiple carriers Premium economy">Multiple carriers Premium economy</option>
+              <option value="Trujet">Trujet</option>
+         </select> <br>
+          <input type="date" name="Date Of Journey" placeholder="Date_Of_Journey" required="required" /><br>
+          <label for="Source">Choose Source City:</label>
+          <select id="Source" name="Source">
+             <option value="Delhi">Delhi</option>
+             <option value="Mumbai">Mumbai</option>
+             <option value="Kolkata">Kolkata</option>
+             <option value="Banglore">Banglore</option>
+              <option value="Chennai">Chennai</option>
+         </select> <br>
+          <label for="Destination">Choose Destination City:</label>
+          <select id="Destination" name="Destination">
+             <option value="Delhi">Delhi</option>
+             <option value="Mumbai">Mumbai</option>
+             <option value="Kolkata">Kolkata</option>
+             <option value="Banglore">Banglore</option>
+              <option value="Cochin">Cochin</option>
+              <option value="New Delhi">New Delhi</option>
+              <option value="Hyderabad">Hyderabad</option>
+         </select> <br>
+          <input type="text" name="Route" placeholder="route" required="required" /><br>
+          <input type="time" name="dep time" placeholder="dep_time" required="required" /><br>
+          <input type="time" name="arrival time" placeholder="arrival_time" required="required" /><br>
+          <input type="text" name="Duration" placeholder="Duration" required="required" /><br>
+          <label for="Total_Stops">Choose number of Stops:</label>
+          <select id="Total_Stops" name="Total_Stops">
+             <option value="non-stop">non-stop</option>
+             <option value="1 stop">1 stop</option>
+             <option value="2 stop">2 stop</option>
+             <option value="3 stop">3 stop</option>
+              <option value="4 stop">4 stop</option>
+         </select> <br>
+          <label for="Additional_Info">Choose a Info:</label>
+          <select id="Additional_Info" name="Additional_Info">
+             <option value="No info">No info</option>
+             <option value="In-flight meal not included">In-flight meal not included</option>
+             <option value="No check-in baggage included">No check-in baggage included</option>
+             <option value="1 Short layover">1 Short layover</option>
+              <option value="1 Long layover">1 Long layover</option>
+              <option value="Change airports">Change airports</option>
+              <option value="Business class">Business class</option>
+              <option value="Red-eye flight">Red-eye flight</option>
+              <option value="2 Long layover">2 Long layover</option>
+         </select> <br>
+
+          <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      </form>
+
+    <br>
+    <br>
+
+ </div>
+ {{result_text}}
+
+</body>
+</html>

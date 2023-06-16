@@ -16,7 +16,7 @@ class utils:
            if not os.path.isdir(path):
                os.makedirs(path, exist_ok=True)
 
-           with open(path+"/"+model_name+'.pkl',"wb") as f:
+           with open(path+"/"+model_name+'.sav',"wb") as f:
                pickle.dump(model,f)
                f.close()
            self.log.log(self.file_object, "model saving operation successful")
@@ -28,7 +28,7 @@ class utils:
     def model_loader(self,model_name):
         self.log.log(self.file_object, "model loading operation started")
         try:
-           with open(self.path+"/"+model_name+"/"+model_name+'.pkl', "rb") as f:
+           with open(self.path+"/"+model_name+"/"+model_name+'.sav', "rb") as f:
                self.log.log(self.file_object, "model loading operation successful")
                return pickle.load(f)
 

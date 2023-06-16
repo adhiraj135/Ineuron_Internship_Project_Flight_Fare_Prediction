@@ -1,0 +1,173 @@
+2023-06-16/02:40:42		prediction started!!
+2023-06-16/02:40:42		prediction Data loading started!!
+2023-06-16/02:40:42		prediction data which was created using the input by users on webpage operation started
+2023-06-16/02:40:42		error in prediction data loading : [Errno 2] No such file or directory: 'Dataset/prediction_file.csv'
+2023-06-16/02:40:42		prediction data loading is unsuccessful
+2023-06-16/02:40:42		error in prediction : [Errno 2] No such file or directory: 'Dataset/prediction_file.csv'
+2023-06-16/02:40:42		prediction unsuccessful
+2023-06-16/03:11:10		prediction started!!
+2023-06-16/03:11:10		prediction Data loading started!!
+2023-06-16/03:11:10		prediction data which was created using the input by users on webpage operation started
+2023-06-16/03:11:10		prediction data successfully loaded
+2023-06-16/03:11:10		input Data loading completed!!
+2023-06-16/03:11:10		Prediction Feature Engineering started!!
+2023-06-16/03:11:10		dropping null values operation started
+2023-06-16/03:11:10		dropping null values operation successful
+2023-06-16/03:11:10		Changing dtype to datetime operation started
+2023-06-16/03:11:10		Changing dtype to datetime operation successful
+2023-06-16/03:11:10		Separating Date columns operation started
+2023-06-16/03:11:10		Separating Date columns operation successful
+2023-06-16/03:11:10		Separating Time columns operation started
+2023-06-16/03:11:10		Separating Time columns operation successful
+2023-06-16/03:11:10		extraction from duration column started
+2023-06-16/03:11:10		extraction from duration column successful
+2023-06-16/03:11:10		dropping unnecessary columns operation started
+2023-06-16/03:11:10		dropping unnecessary columns operation successful
+2023-06-16/03:11:10		data loading started
+2023-06-16/03:11:10		data successfully loaded
+2023-06-16/03:11:10		dict value operation started
+2023-06-16/03:11:10		error in dict value operation : 'Airline'
+2023-06-16/03:11:10		dict value operation unsuccessful
+2023-06-16/03:11:10		error in prediction : 'Airline'
+2023-06-16/03:11:10		prediction unsuccessful
+2023-06-16/03:18:06		prediction started!!
+2023-06-16/03:18:06		prediction Data loading started!!
+2023-06-16/03:18:06		prediction data which was created using the input by users on webpage operation started
+2023-06-16/03:18:06		prediction data successfully loaded
+2023-06-16/03:18:06		input Data loading completed!!
+2023-06-16/03:18:06		Prediction Feature Engineering started!!
+2023-06-16/03:18:06		dropping null values operation started
+2023-06-16/03:18:06		dropping null values operation successful
+2023-06-16/03:18:06		Changing dtype to datetime operation started
+2023-06-16/03:18:06		Changing dtype to datetime operation successful
+2023-06-16/03:18:06		Separating Date columns operation started
+2023-06-16/03:18:06		Separating Date columns operation successful
+2023-06-16/03:18:06		Separating Time columns operation started
+2023-06-16/03:18:06		Separating Time columns operation successful
+2023-06-16/03:18:06		extraction from duration column started
+2023-06-16/03:18:06		extraction from duration column successful
+2023-06-16/03:18:06		dropping unnecessary columns operation started
+2023-06-16/03:18:06		dropping unnecessary columns operation successful
+2023-06-16/03:18:06		input data loading started
+2023-06-16/03:18:06		input data successfully loaded
+2023-06-16/03:18:06		dict value operation started
+2023-06-16/03:18:06		error in dict value operation : 'IndiGo'
+2023-06-16/03:18:06		dict value operation unsuccessful
+2023-06-16/03:18:06		error in prediction : 'IndiGo'
+2023-06-16/03:18:06		prediction unsuccessful
+2023-06-16/03:26:33		prediction started!!
+2023-06-16/03:26:33		prediction Data loading started!!
+2023-06-16/03:26:33		prediction data which was created using the input by users on webpage operation started
+2023-06-16/03:26:33		prediction data successfully loaded
+2023-06-16/03:26:33		input Data loading completed!!
+2023-06-16/03:26:33		Prediction Feature Engineering started!!
+2023-06-16/03:26:33		dropping null values operation started
+2023-06-16/03:26:33		dropping null values operation successful
+2023-06-16/03:26:33		Changing dtype to datetime operation started
+2023-06-16/03:26:33		Changing dtype to datetime operation successful
+2023-06-16/03:26:33		Separating Date columns operation started
+2023-06-16/03:26:33		Separating Date columns operation successful
+2023-06-16/03:26:33		Separating Time columns operation started
+2023-06-16/03:26:33		Separating Time columns operation successful
+2023-06-16/03:26:33		extraction from duration column started
+2023-06-16/03:26:33		extraction from duration column successful
+2023-06-16/03:26:33		dropping unnecessary columns operation started
+2023-06-16/03:26:33		dropping unnecessary columns operation successful
+2023-06-16/03:26:35		dict value operation started
+2023-06-16/03:26:35		Dict value operation successful
+2023-06-16/03:26:35		dict value operation started
+2023-06-16/03:26:35		Dict value operation successful
+2023-06-16/03:26:35		manual encoding operation started
+2023-06-16/03:26:35		manual encoding operation successful
+2023-06-16/03:26:35		input data loading started
+2023-06-16/03:26:35		input data successfully loaded
+2023-06-16/03:26:35		source column addition operation started
+2023-06-16/03:26:35		source column addition operation successful
+2023-06-16/03:26:35		One Hot encoding operation started
+2023-06-16/03:26:35		One Hot encoding successful
+2023-06-16/03:26:35		dropping unnecessary columns operation started
+2023-06-16/03:26:35		dropping unnecessary columns operation successful
+2023-06-16/03:26:35		Prediction Feature Engineering started!!
+2023-06-16/03:26:35		model loading started!!
+2023-06-16/03:26:35		model loading operation started
+2023-06-16/03:26:35		error in model loading operation : [Errno 2] No such file or directory: 'src/saved_model/xgboost/xgboost.pkl'
+2023-06-16/03:26:35		model loading operation unsuccessful
+2023-06-16/03:26:35		error in prediction : [Errno 2] No such file or directory: 'src/saved_model/xgboost/xgboost.pkl'
+2023-06-16/03:26:35		prediction unsuccessful
+2023-06-16/03:27:56		prediction started!!
+2023-06-16/03:27:56		prediction Data loading started!!
+2023-06-16/03:27:56		prediction data which was created using the input by users on webpage operation started
+2023-06-16/03:27:56		prediction data successfully loaded
+2023-06-16/03:27:56		input Data loading completed!!
+2023-06-16/03:27:56		Prediction Feature Engineering started!!
+2023-06-16/03:27:56		dropping null values operation started
+2023-06-16/03:27:56		dropping null values operation successful
+2023-06-16/03:27:56		Changing dtype to datetime operation started
+2023-06-16/03:27:56		Changing dtype to datetime operation successful
+2023-06-16/03:27:56		Separating Date columns operation started
+2023-06-16/03:27:56		Separating Date columns operation successful
+2023-06-16/03:27:56		Separating Time columns operation started
+2023-06-16/03:27:56		Separating Time columns operation successful
+2023-06-16/03:27:56		extraction from duration column started
+2023-06-16/03:27:56		extraction from duration column successful
+2023-06-16/03:27:56		dropping unnecessary columns operation started
+2023-06-16/03:27:56		dropping unnecessary columns operation successful
+2023-06-16/03:27:57		dict value operation started
+2023-06-16/03:27:57		Dict value operation successful
+2023-06-16/03:27:57		dict value operation started
+2023-06-16/03:27:57		Dict value operation successful
+2023-06-16/03:27:57		manual encoding operation started
+2023-06-16/03:27:57		manual encoding operation successful
+2023-06-16/03:27:57		input data loading started
+2023-06-16/03:27:58		input data successfully loaded
+2023-06-16/03:27:58		source column addition operation started
+2023-06-16/03:27:58		source column addition operation successful
+2023-06-16/03:27:58		One Hot encoding operation started
+2023-06-16/03:27:58		One Hot encoding successful
+2023-06-16/03:27:58		dropping unnecessary columns operation started
+2023-06-16/03:27:58		dropping unnecessary columns operation successful
+2023-06-16/03:27:58		Prediction Feature Engineering started!!
+2023-06-16/03:27:58		model loading started!!
+2023-06-16/03:27:58		model loading operation started
+2023-06-16/03:27:58		error in model loading operation : [Errno 2] No such file or directory: 'src/saved_model/xgboost/xgboost.pkl'
+2023-06-16/03:27:58		model loading operation unsuccessful
+2023-06-16/03:27:58		error in prediction : [Errno 2] No such file or directory: 'src/saved_model/xgboost/xgboost.pkl'
+2023-06-16/03:27:58		prediction unsuccessful
+2023-06-16/03:29:25		prediction started!!
+2023-06-16/03:29:25		prediction Data loading started!!
+2023-06-16/03:29:25		prediction data which was created using the input by users on webpage operation started
+2023-06-16/03:29:25		prediction data successfully loaded
+2023-06-16/03:29:25		input Data loading completed!!
+2023-06-16/03:29:25		Prediction Feature Engineering started!!
+2023-06-16/03:29:25		dropping null values operation started
+2023-06-16/03:29:25		dropping null values operation successful
+2023-06-16/03:29:25		Changing dtype to datetime operation started
+2023-06-16/03:29:25		Changing dtype to datetime operation successful
+2023-06-16/03:29:25		Separating Date columns operation started
+2023-06-16/03:29:25		Separating Date columns operation successful
+2023-06-16/03:29:25		Separating Time columns operation started
+2023-06-16/03:29:25		Separating Time columns operation successful
+2023-06-16/03:29:25		extraction from duration column started
+2023-06-16/03:29:25		extraction from duration column successful
+2023-06-16/03:29:25		dropping unnecessary columns operation started
+2023-06-16/03:29:25		dropping unnecessary columns operation successful
+2023-06-16/03:29:27		dict value operation started
+2023-06-16/03:29:27		Dict value operation successful
+2023-06-16/03:29:27		dict value operation started
+2023-06-16/03:29:27		Dict value operation successful
+2023-06-16/03:29:27		manual encoding operation started
+2023-06-16/03:29:27		manual encoding operation successful
+2023-06-16/03:29:27		input data loading started
+2023-06-16/03:29:27		input data successfully loaded
+2023-06-16/03:29:27		source column addition operation started
+2023-06-16/03:29:27		source column addition operation successful
+2023-06-16/03:29:27		One Hot encoding operation started
+2023-06-16/03:29:27		One Hot encoding successful
+2023-06-16/03:29:27		dropping unnecessary columns operation started
+2023-06-16/03:29:27		dropping unnecessary columns operation successful
+2023-06-16/03:29:27		Prediction Feature Engineering started!!
+2023-06-16/03:29:27		model loading started!!
+2023-06-16/03:29:27		model loading operation started
+2023-06-16/03:29:27		model loading operation successful
+2023-06-16/03:29:30		model : xgboost loaded successfully
+2023-06-16/03:29:30		prediction completed!!

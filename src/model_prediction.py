@@ -4,6 +4,7 @@ from src.Feature_Engineering.preprocessing import preprocessor
 from src.Feature_Engineering.encoding import encoder
 from src.utils import utils
 from src.logger import log
+import pandas as pd
 
 
 class prediction:
@@ -32,7 +33,7 @@ class prediction:
             data=self.preprocessor.duration_column_processor(data,"Duration")
             data=self.preprocessor.drop_unneccessary_columns(data,col_list=['Additional_Info','Route','Date_of_Journey_year'])
             print(data.values)
-            df=self.load.load()
+            df=pd.read_excel("Dataset/Data_Train.xlsx")
             data=self.encoder.dict_value(train_data=df,pred_data=data,column='Airline')
             data=self.encoder.dict_value(train_data=df, pred_data=data, column='Destination')
             data=self.encoder.manual_encoding(data,'Total_Stops')
