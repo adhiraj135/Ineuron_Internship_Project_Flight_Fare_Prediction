@@ -55,11 +55,13 @@ The Prediction of Credit Risk Final Model Run in Local Enviornment
 
 Main Page :
 
-<img height="150" src="C:\Users\DELL\Pictures\flight1.PNG" width="150"/>
+![flight1](https://github.com/adhiraj135/Ineuron_Internship_Project_Flight_Fare_Prediction/assets/107035869/731a1a86-3e53-4f0c-b019-08c3c2113301)
+
 
 Result Page :
 
-<img height="150" src="C:\Users\DELL\Pictures\flight.PNG" width="150"/>
+![flight](https://github.com/adhiraj135/Ineuron_Internship_Project_Flight_Fare_Prediction/assets/107035869/f37385ec-e6d7-49ca-8d0b-81342a5d3856)
+
 
 ## **Deployment Link**
 
