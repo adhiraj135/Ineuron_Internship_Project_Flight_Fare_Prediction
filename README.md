@@ -65,7 +65,7 @@ Result Page :
 
 ## **Deployment Link**
 
-AWS - 
+AWS - http://flightfareapp-env.eba-ppnqypwp.us-east-2.elasticbeanstalk.com/
 
 ## **Installation**
 
