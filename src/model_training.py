@@ -55,11 +55,11 @@ class training:
             x = data.drop(columns=['Price'], axis=1)
             y = data['Price']
             print(x,y)
-            #x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=42, test_size=0.25)
-            #self.log.log(self.file, "Best model selection Started!!")
-            #model_name, model = self.model.best_model(x_train=x_train, x_test=x_test, y_train=y_train, y_test=y_test)
-            #self.log.log(self.file, "Best model selection Completed!!")
-            #self.utils.model_saver(model_name, model)
+            x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=42, test_size=0.25)
+            self.log.log(self.file, "Best model selection Started!!")
+            model_name, model = self.model.best_model(x_train=x_train, x_test=x_test, y_train=y_train, y_test=y_test)
+            self.log.log(self.file, "Best model selection Completed!!")
+            self.utils.model_saver(model_name, model)
             self.log.log(self.file, "Training Successful!!")
 
 

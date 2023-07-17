@@ -1,2 +1,2 @@
 Airline,Date_of_Journey,Source,Destination,Route,Dep_Time,Arrival_Time,Duration,Total_Stops,Additional_Info
-IndiGo,2023-06-23,Kolkata,New Delhi,Kolkata -> New Delhi,17:00,22:30,5h 30m,non-stop,No info
+Multiple carriers,2023-06-15,Delhi,Cochin,Delhi -> Cochin,07:45,12:02,4h 17m,1 stop,No check-in baggage included

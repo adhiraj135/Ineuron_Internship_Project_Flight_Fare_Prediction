@@ -356,3 +356,82 @@
 2023-06-16/02:34:33		dropping unnecessary columns operation successful
 2023-06-16/02:34:34		Feature Engineering Completed!!
 2023-06-16/02:34:34		Training Successful!!
+2023-06-16/11:03:52		training process started!!
+2023-06-16/11:03:52		cassandra database builder operation started
+2023-06-16/11:03:52		data loading of the data to be stored in cassandra database started
+2023-06-16/11:03:56		data loading successfully completed
+2023-06-16/11:03:56		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-16/11:03:56		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-16/11:03:56		Cassandra database table creation started
+2023-06-16/11:03:56		database connection operation started
+2023-06-16/11:04:19		database connection operation successful
+2023-06-16/11:04:20		Cassandra database table already created
+2023-06-16/11:04:20		Cassandra database data insertion started
+2023-06-16/11:04:20		database connection operation started
+2023-06-16/11:04:38		database connection operation successful
+2023-06-16/11:04:39		Cassandra database table already contains the full data
+2023-06-16/11:04:39		Extract data from Cassandra database into lacal stared
+2023-06-16/11:04:39		database connection operation started
+2023-06-16/11:05:01		database connection operation successful
+2023-06-16/11:05:12		Error in Extraction of data from Cassandra database into lacal errors={'095b32e1-28c2-497d-aafa-12e17d0d935b-us-east1.db.astra.datastax.com:29042:7daef3a3-819c-428a-8344-e0cc6064e144': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=095b32e1-28c2-497d-aafa-12e17d0d935b-us-east1.db.astra.datastax.com:29042:7daef3a3-819c-428a-8344-e0cc6064e144
+2023-06-16/11:05:12		Extraction of data from Cassandra database into lacal unsuccessful
+2023-06-16/11:05:12		exception occurred while training operation : errors={'095b32e1-28c2-497d-aafa-12e17d0d935b-us-east1.db.astra.datastax.com:29042:7daef3a3-819c-428a-8344-e0cc6064e144': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=095b32e1-28c2-497d-aafa-12e17d0d935b-us-east1.db.astra.datastax.com:29042:7daef3a3-819c-428a-8344-e0cc6064e144
+2023-06-16/11:05:12		training operation unsuccessful
+2023-06-16/11:06:22		training process started!!
+2023-06-16/11:06:22		cassandra database builder operation started
+2023-06-16/11:06:22		data loading of the data to be stored in cassandra database started
+2023-06-16/11:06:25		data loading successfully completed
+2023-06-16/11:06:25		extraction columns and datatype from the data to be stored in cassandra started
+2023-06-16/11:06:25		extraction columns and datatype from the data to be stored in cassandra is successful
+2023-06-16/11:06:25		Cassandra database table creation started
+2023-06-16/11:06:25		database connection operation started
+2023-06-16/11:06:40		database connection operation successful
+2023-06-16/11:06:41		Cassandra database table already created
+2023-06-16/11:06:41		Cassandra database data insertion started
+2023-06-16/11:06:41		database connection operation started
+2023-06-16/11:06:58		database connection operation successful
+2023-06-16/11:06:59		Cassandra database table already contains the full data
+2023-06-16/11:06:59		Extract data from Cassandra database into lacal stared
+2023-06-16/11:06:59		database connection operation started
+2023-06-16/11:07:16		database connection operation successful
+2023-06-16/11:07:47		Extraction of data from Cassandra database into lacal successful
+2023-06-16/11:07:47		cassandra database builder operation successful
+2023-06-16/11:07:47		Dataset loading Started!!
+2023-06-16/11:07:47		data loading started
+2023-06-16/11:07:47		data successfully loaded
+2023-06-16/11:07:47		Dataset loading completed!!
+2023-06-16/11:07:47		Feature Engineering Started!!
+2023-06-16/11:07:47		dropping null values operation started
+2023-06-16/11:07:47		dropping null values operation successful
+2023-06-16/11:07:47		Changing dtype to datetime operation started
+2023-06-16/11:07:47		Changing dtype to datetime operation successful
+2023-06-16/11:07:47		Separating Date columns operation started
+2023-06-16/11:07:47		Separating Date columns operation successful
+2023-06-16/11:07:47		Separating Time columns operation started
+2023-06-16/11:07:47		Separating Time columns operation successful
+2023-06-16/11:07:47		extraction from duration column started
+2023-06-16/11:07:47		extraction from duration column successful
+2023-06-16/11:07:47		dropping unnecessary columns operation started
+2023-06-16/11:07:47		dropping unnecessary columns operation successful
+2023-06-16/11:07:47		One Hot encoding operation started
+2023-06-16/11:07:47		One Hot encoding successful
+2023-06-16/11:07:47		mean encoding operation started
+2023-06-16/11:07:47		mean encoding operation successful
+2023-06-16/11:07:47		manual encoding operation started
+2023-06-16/11:07:47		manual encoding operation successful
+2023-06-16/11:07:47		dropping unnecessary columns operation started
+2023-06-16/11:07:47		dropping unnecessary columns operation successful
+2023-06-16/11:07:47		Feature Engineering Completed!!
+2023-06-16/11:07:47		Best model selection Started!!
+2023-06-16/11:07:47		best model operation started
+2023-06-16/11:07:47		best parameters for random forest regressor extraction started
+2023-06-16/12:08:36		best param for random fores are	max_depth : 16	n_estimators : 1040	min_samples_split : 10	max_features : auto
+2023-06-16/12:08:36		best parameters for random forest regressor extraction successful
+2023-06-16/12:08:37		best parameters for xgbosst regressor extraction started
+2023-06-16/12:13:14		best param for random fores are	max_depth : 10	n_estimators : 50	learning_rate : 0.1
+2023-06-16/12:13:14		best parameters for xgbosst regressor extraction successful
+2023-06-16/12:13:14		best model to be selected is XGboost
+2023-06-16/12:13:14		Best model selection Completed!!
+2023-06-16/12:13:14		model saving operation started
+2023-06-16/12:13:14		model saving operation successful
+2023-06-16/12:13:14		Training Successful!!

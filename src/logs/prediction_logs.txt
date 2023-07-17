@@ -422,3 +422,41 @@
 2023-06-16/10:29:52		model loading operation successful
 2023-06-16/10:29:55		model : xgboost loaded successfully
 2023-06-16/10:29:55		prediction completed!!
+2023-06-27/23:41:50		prediction started!!
+2023-06-27/23:41:50		prediction Data loading started!!
+2023-06-27/23:41:50		prediction data which was created using the input by users on webpage operation started
+2023-06-27/23:41:50		prediction data successfully loaded
+2023-06-27/23:41:50		input Data loading completed!!
+2023-06-27/23:41:50		Prediction Feature Engineering started!!
+2023-06-27/23:41:50		dropping null values operation started
+2023-06-27/23:41:50		dropping null values operation successful
+2023-06-27/23:41:50		Changing dtype to datetime operation started
+2023-06-27/23:41:50		Changing dtype to datetime operation successful
+2023-06-27/23:41:50		Separating Date columns operation started
+2023-06-27/23:41:50		Separating Date columns operation successful
+2023-06-27/23:41:50		Separating Time columns operation started
+2023-06-27/23:41:50		Separating Time columns operation successful
+2023-06-27/23:41:50		extraction from duration column started
+2023-06-27/23:41:50		extraction from duration column successful
+2023-06-27/23:41:50		dropping unnecessary columns operation started
+2023-06-27/23:41:50		dropping unnecessary columns operation successful
+2023-06-27/23:41:52		dict value operation started
+2023-06-27/23:41:52		Dict value operation successful
+2023-06-27/23:41:52		dict value operation started
+2023-06-27/23:41:52		Dict value operation successful
+2023-06-27/23:41:52		manual encoding operation started
+2023-06-27/23:41:52		manual encoding operation successful
+2023-06-27/23:41:52		input data loading started
+2023-06-27/23:41:52		input data successfully loaded
+2023-06-27/23:41:52		source column addition operation started
+2023-06-27/23:41:52		source column addition operation successful
+2023-06-27/23:41:52		One Hot encoding operation started
+2023-06-27/23:41:52		One Hot encoding successful
+2023-06-27/23:41:52		dropping unnecessary columns operation started
+2023-06-27/23:41:52		dropping unnecessary columns operation successful
+2023-06-27/23:41:52		Prediction Feature Engineering started!!
+2023-06-27/23:41:52		model loading started!!
+2023-06-27/23:41:52		model loading operation started
+2023-06-27/23:41:52		model loading operation successful
+2023-06-27/23:41:54		model : xgboost loaded successfully
+2023-06-27/23:41:54		prediction completed!!
